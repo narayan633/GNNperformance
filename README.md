@@ -30,7 +30,7 @@ src/
     explain_ten_seeds.py         extends the explanation experiment to ten training seeds (RQ5)
     analysis_reliability.py      reliability tables from the saved predictions (RQ4)
     analysis_statistics.py       statistical tests and the design synthesis
-results/                         the numbers behind every table and figure (see below)
+results/                         the numbers behind every table and figure
 ```
 
 ## Setup
