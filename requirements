@@ -1,0 +1,13 @@
+# Versions used for the reported results (Python 3.12.13, Windows 11, NVIDIA RTX 5080).
+# PyTorch was a CUDA 13.0 build: torch 2.14.0.dev20260805+cu130.
+# Install PyTorch first from https://pytorch.org for your CUDA version, then: pip install -r requirements.txt
+torch_geometric==2.8.0.post1
+numpy==2.5.1
+scipy==1.18.1
+scikit-learn==1.9.0
+pandas==3.0.5
+networkx==3.6.1
+xgboost==3.4.1
+shap==0.52.0
+lime>=0.2.0.1
+psutil>=5.9
