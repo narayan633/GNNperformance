@@ -1,0 +1,2198 @@
+[
+  {
+    "model": "GCN",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 19,
+    "best_value": 0.6209367487448636,
+    "top5_values": [
+      0.6209367487448636,
+      0.6185122246500494,
+      0.6145073728739605,
+      0.6131748016401977,
+      0.6125239872419742
+    ],
+    "top5_spread": 0.008412761502889388,
+    "total_search_seconds": 460.487174,
+    "mean_trial_seconds": 9.20974348,
+    "param_importance": {
+      "learning_rate": 0.6345266402902496,
+      "weight_decay": 0.18501945659398442,
+      "dropout": 0.1415872341757475,
+      "hidden_dim": 0.03886666894001843
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "dropout": 0.4050553995834283,
+        "learning_rate": 0.012952433533509649,
+        "weight_decay": 0.0018285615855925346
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.3573120315254346,
+        "learning_rate": 0.016092721177245247,
+        "weight_decay": 0.0013185027425620436
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.4547410231256662,
+        "learning_rate": 0.027100292985245536,
+        "weight_decay": 0.0011512541464784054
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.3628963033198885,
+        "learning_rate": 0.016578842714843015,
+        "weight_decay": 0.002181898499302445
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.3807745843945033,
+        "learning_rate": 0.009292891310990441,
+        "weight_decay": 0.001540671874876928
+      }
+    ]
+  },
+  {
+    "model": "GCN",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 34,
+    "best_value": 0.8279988138923249,
+    "top5_values": [
+      0.8279988138923249,
+      0.8274538506132456,
+      0.8262245622647253,
+      0.8259781589869778,
+      0.8259018488513383
+    ],
+    "top5_spread": 0.0020969650409865537,
+    "total_search_seconds": 914.188682,
+    "mean_trial_seconds": 18.28377364,
+    "param_importance": {
+      "learning_rate": 0.6038792162068363,
+      "weight_decay": 0.29961276976169754,
+      "hidden_dim": 0.049129597741236715,
+      "dropout": 0.04737841629022955
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "dropout": 0.10088281615801886,
+        "learning_rate": 0.02647469965113511,
+        "weight_decay": 6.561945729497483e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.10133161687899372,
+        "learning_rate": 0.02260125280908199,
+        "weight_decay": 1.227717571258023e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.100300393674128,
+        "learning_rate": 0.027654499849592454,
+        "weight_decay": 5.177536987308699e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.18212495043164156,
+        "learning_rate": 0.02091099232098945,
+        "weight_decay": 2.3602429877953085e-06
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.14796758447612118,
+        "learning_rate": 0.02580782209902731,
+        "weight_decay": 1.5325424959922892e-06
+      }
+    ]
+  },
+  {
+    "model": "GAT",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 24,
+    "best_value": 0.5766047000546114,
+    "top5_values": [
+      0.5766047000546114,
+      0.5704680027260413,
+      0.566593860981398,
+      0.5651768579025057,
+      0.5620515478950696
+    ],
+    "top5_spread": 0.014553152159541782,
+    "total_search_seconds": 777.517146,
+    "mean_trial_seconds": 15.55034292,
+    "param_importance": {
+      "dropout": 0.7738696931452195,
+      "heads": 0.1369977898548776,
+      "hidden_dim": 0.04820934987223738,
+      "learning_rate": 0.033145383902980934,
+      "weight_decay": 0.007777783224684535
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.11263706918679187,
+        "learning_rate": 0.011051054254685813,
+        "weight_decay": 2.2033636229183135e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.1036162911910775,
+        "learning_rate": 0.010370083385816253,
+        "weight_decay": 2.1327170150193073e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.1102331068331109,
+        "learning_rate": 0.0094346860419802,
+        "weight_decay": 1.9136623676661173e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.10295717145285543,
+        "learning_rate": 0.011793663713961807,
+        "weight_decay": 8.01566722183769e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.16554862171087262,
+        "learning_rate": 0.010425375794729604,
+        "weight_decay": 1.7407182788754515e-05
+      }
+    ]
+  },
+  {
+    "model": "GAT",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 31,
+    "best_value": 0.905410352654652,
+    "top5_values": [
+      0.905410352654652,
+      0.904861042852105,
+      0.9035899393263115,
+      0.9027455025692532,
+      0.9026454492855839
+    ],
+    "top5_spread": 0.0027649033690680946,
+    "total_search_seconds": 1158.20615,
+    "mean_trial_seconds": 23.164123,
+    "param_importance": {
+      "learning_rate": 0.6363823291297238,
+      "weight_decay": 0.22483951278863853,
+      "dropout": 0.1291033205020095,
+      "hidden_dim": 0.00953129512905679,
+      "heads": 0.0001435424505712371
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.14175377381032161,
+        "learning_rate": 0.02144474454807583,
+        "weight_decay": 0.00011934450920170809
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.1423916053748168,
+        "learning_rate": 0.028557716924879382,
+        "weight_decay": 4.738232079400616e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.16136300648739596,
+        "learning_rate": 0.035603755000407473,
+        "weight_decay": 0.000362179567483321
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.17921634447667284,
+        "learning_rate": 0.030806222556313913,
+        "weight_decay": 2.591716721771032e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.17468307905834582,
+        "learning_rate": 0.03221438102337333,
+        "weight_decay": 3.976158553916005e-05
+      }
+    ]
+  },
+  {
+    "model": "GCN+XGBoost",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 35,
+    "best_value": 0.6785126647423226,
+    "top5_values": [
+      0.6785126647423226,
+      0.6755847478246583,
+      0.6733288385764997,
+      0.6714312280588514,
+      0.6704047918378302
+    ],
+    "top5_spread": 0.008107872904492441,
+    "total_search_seconds": 2581.459012,
+    "mean_trial_seconds": 51.62918024,
+    "param_importance": {
+      "learning_rate": 0.5577681645628337,
+      "gcn_hidden_dim": 0.17088237521936814,
+      "weight_decay": 0.1045787376714534,
+      "gcn_dropout": 0.10118862551503653,
+      "xgb_n_estimators": 0.04699548218140275,
+      "xgb_max_depth": 0.01242897719176834,
+      "xgb_learning_rate": 0.00615763765813709
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.549802324804382,
+        "learning_rate": 0.013660558262151852,
+        "weight_decay": 0.0033266724440655857,
+        "xgb_n_estimators": 300,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.020011879760090997
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.4042970091514679,
+        "learning_rate": 0.006059303192760901,
+        "weight_decay": 0.003011066169129793,
+        "xgb_n_estimators": 350,
+        "xgb_max_depth": 5,
+        "xgb_learning_rate": 0.07512223290107847
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.46400622399280267,
+        "learning_rate": 0.007027790293754004,
+        "weight_decay": 0.0010985621917463158,
+        "xgb_n_estimators": 300,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.049532771425952554
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.5600140022247453,
+        "learning_rate": 0.0135734385575209,
+        "weight_decay": 0.0004704411870728438,
+        "xgb_n_estimators": 300,
+        "xgb_max_depth": 10,
+        "xgb_learning_rate": 0.049665846852587646
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.5049610279135837,
+        "learning_rate": 0.01968650942568909,
+        "weight_decay": 0.00021149105254754258,
+        "xgb_n_estimators": 300,
+        "xgb_max_depth": 3,
+        "xgb_learning_rate": 0.06669543198989068
+      }
+    ]
+  },
+  {
+    "model": "GCN+XGBoost",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 36,
+    "best_value": 0.9081273176018275,
+    "top5_values": [
+      0.9081273176018275,
+      0.9076659684096058,
+      0.9070965643287389,
+      0.9060922757102599,
+      0.9054728673141389
+    ],
+    "top5_spread": 0.0026544502876886256,
+    "total_search_seconds": 3704.311305,
+    "mean_trial_seconds": 74.0862261,
+    "param_importance": {
+      "xgb_max_depth": 0.45584032302008093,
+      "gcn_hidden_dim": 0.21739386678944847,
+      "weight_decay": 0.11002318696453368,
+      "gcn_dropout": 0.09677199713165063,
+      "xgb_learning_rate": 0.0663736802434958,
+      "learning_rate": 0.02814756885585726,
+      "xgb_n_estimators": 0.025449376994933222
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.20211841487502175,
+        "learning_rate": 0.01686562617431961,
+        "weight_decay": 1.1586051838173706e-05,
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.13384882497853182
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.24470944109522852,
+        "learning_rate": 0.005380098316856534,
+        "weight_decay": 1.9138741662975363e-05,
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.12156624993634904
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.1622554944273178,
+        "learning_rate": 0.02121956257034925,
+        "weight_decay": 6.4852303570330505e-06,
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.11905190115080466
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.10565685499490307,
+        "learning_rate": 0.02245532228615015,
+        "weight_decay": 7.189726802003552e-06,
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 7,
+        "xgb_learning_rate": 0.17953035552557042
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.16799550083350953,
+        "learning_rate": 0.02564417134535574,
+        "weight_decay": 5.882204053107743e-06,
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.12258769409613007
+      }
+    ]
+  },
+  {
+    "model": "GCN+KNN",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 36,
+    "best_value": 0.6222918793230772,
+    "top5_values": [
+      0.6222918793230772,
+      0.6184663955873768,
+      0.614018855653833,
+      0.6129665736374014,
+      0.6128836161664275
+    ],
+    "top5_spread": 0.009408263156649666,
+    "total_search_seconds": 809.394954,
+    "mean_trial_seconds": 16.18789908,
+    "param_importance": {
+      "learning_rate": 0.5475221172332345,
+      "weight_decay": 0.24925394236893625,
+      "k_neighbors": 0.10687198431446462,
+      "gcn_hidden_dim": 0.05771673816315946,
+      "gcn_dropout": 0.03863521792020532
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.2865022215376203,
+        "learning_rate": 0.007576523300985287,
+        "weight_decay": 0.0011614787796978352,
+        "k_neighbors": 15
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.19439037065808162,
+        "learning_rate": 0.007473834460252648,
+        "weight_decay": 0.0029187683340259132,
+        "k_neighbors": 14
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.21223778257358497,
+        "learning_rate": 0.004324463986184575,
+        "weight_decay": 0.002623955092348873,
+        "k_neighbors": 13
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.23426984132468032,
+        "learning_rate": 0.008259537801341863,
+        "weight_decay": 0.005830313078461891,
+        "k_neighbors": 14
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.1787853395751978,
+        "learning_rate": 0.008501962956612692,
+        "weight_decay": 0.0036982209468932356,
+        "k_neighbors": 17
+      }
+    ]
+  },
+  {
+    "model": "GCN+KNN",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 27,
+    "best_value": 0.8661911422048609,
+    "top5_values": [
+      0.8661911422048609,
+      0.8644266458549978,
+      0.8630698096611885,
+      0.8624025417204357,
+      0.8619251322082817
+    ],
+    "top5_spread": 0.004266009996579223,
+    "total_search_seconds": 866.038654,
+    "mean_trial_seconds": 17.32077308,
+    "param_importance": {
+      "gcn_hidden_dim": 0.40646761349270105,
+      "k_neighbors": 0.2867495105397834,
+      "learning_rate": 0.2283905489881928,
+      "weight_decay": 0.04782174956783491,
+      "gcn_dropout": 0.030570577411487682
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.3873872476526846,
+        "learning_rate": 0.013522456431282024,
+        "weight_decay": 0.00038388907158617324,
+        "k_neighbors": 25
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.4189564158949729,
+        "learning_rate": 0.008405943976893713,
+        "weight_decay": 0.00046381609431863356,
+        "k_neighbors": 24
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.4609454051889318,
+        "learning_rate": 0.01612211584284288,
+        "weight_decay": 0.0004966472267028837,
+        "k_neighbors": 27
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.4348933528675406,
+        "learning_rate": 0.0086788124343262,
+        "weight_decay": 7.415274794393097e-05,
+        "k_neighbors": 23
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.41971397439819175,
+        "learning_rate": 0.007667411454533356,
+        "weight_decay": 0.0003053470609594727,
+        "k_neighbors": 24
+      }
+    ]
+  },
+  {
+    "model": "GCN+LSTM",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 29,
+    "best_value": 0.7044518599016316,
+    "top5_values": [
+      0.7044518599016316,
+      0.7027876762278096,
+      0.7009259033816133,
+      0.6997175978402026,
+      0.6991044254410034
+    ],
+    "top5_spread": 0.005347434460628242,
+    "total_search_seconds": 834.285579,
+    "mean_trial_seconds": 16.68571158,
+    "param_importance": {
+      "learning_rate": 0.8035075193222622,
+      "gcn_hidden": 0.13495016592713965,
+      "dropout": 0.04002384989389878,
+      "weight_decay": 0.016898644358158705,
+      "lstm_hidden": 0.004619820498540674
+    },
+    "top5_params": [
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.30269793310077464,
+        "learning_rate": 0.005669051159062461,
+        "weight_decay": 2.2379819750136726e-05
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.399082367499073,
+        "learning_rate": 0.005694398904374173,
+        "weight_decay": 7.780489282827665e-05
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.3713717853754057,
+        "learning_rate": 0.00456392599214029,
+        "weight_decay": 9.813413652794647e-05
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.4353956069295528,
+        "learning_rate": 0.0038977215880072703,
+        "weight_decay": 0.00013352844257885944
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.23372877262537642,
+        "learning_rate": 0.005330142616996635,
+        "weight_decay": 3.29650392236896e-05
+      }
+    ]
+  },
+  {
+    "model": "GCN+LSTM",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 20,
+    "best_value": 0.9128278409715367,
+    "top5_values": [
+      0.9128278409715367,
+      0.9123602839610614,
+      0.9116899308402757,
+      0.9114899277966746,
+      0.9106746474500426
+    ],
+    "top5_spread": 0.0021531935214941234,
+    "total_search_seconds": 1111.084937,
+    "mean_trial_seconds": 22.22169874,
+    "param_importance": {
+      "learning_rate": 0.7075554942428219,
+      "gcn_hidden": 0.16939152316895992,
+      "weight_decay": 0.0655956827541454,
+      "lstm_hidden": 0.03814738788211577,
+      "dropout": 0.019309911951957016
+    },
+    "top5_params": [
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 64,
+        "dropout": 0.19443031545305353,
+        "learning_rate": 0.010051501569076155,
+        "weight_decay": 7.93374471140131e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 64,
+        "dropout": 0.2910103612041227,
+        "learning_rate": 0.010046085183158542,
+        "weight_decay": 7.782169039874689e-05
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.28825989317958406,
+        "learning_rate": 0.009007934158672976,
+        "weight_decay": 2.11090402649395e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 64,
+        "dropout": 0.3798724760910088,
+        "learning_rate": 0.015034396897470626,
+        "weight_decay": 2.040808894707512e-05
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 64,
+        "dropout": 0.25930369631995476,
+        "learning_rate": 0.014416129793008095,
+        "weight_decay": 2.168012992350664e-05
+      }
+    ]
+  },
+  {
+    "model": "GNN+Autoencoder",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 27,
+    "best_value": 0.6266937822258611,
+    "top5_values": [
+      0.6266937822258611,
+      0.6245035307928388,
+      0.6235578332390136,
+      0.6206864539528586,
+      0.6189519655803171
+    ],
+    "top5_spread": 0.007741816645544075,
+    "total_search_seconds": 1216.351872,
+    "mean_trial_seconds": 24.327037439999998,
+    "param_importance": {
+      "learning_rate": 0.41738951032405364,
+      "alpha": 0.3024371937826666,
+      "weight_decay": 0.10776338131030633,
+      "latent_dim": 0.07145098746370675,
+      "dropout": 0.07124398014881739,
+      "hidden_dim": 0.029714946970449258
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.48385004884169763,
+        "learning_rate": 0.010534328360219,
+        "weight_decay": 0.002512540201885177,
+        "alpha": 0.7740947690808495
+      },
+      {
+        "hidden_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.4770523653439721,
+        "learning_rate": 0.009643282263927595,
+        "weight_decay": 0.0041618663687305445,
+        "alpha": 0.7722549587606261
+      },
+      {
+        "hidden_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.40543508347734153,
+        "learning_rate": 0.006927732166394861,
+        "weight_decay": 0.0018930855378422927,
+        "alpha": 0.6156707143786893
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 64,
+        "dropout": 0.5380411925637217,
+        "learning_rate": 0.00859310332816568,
+        "weight_decay": 0.00015799552813767673,
+        "alpha": 0.7818434964737186
+      },
+      {
+        "hidden_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.5353539693170667,
+        "learning_rate": 0.010271571878360697,
+        "weight_decay": 0.002523510777296965,
+        "alpha": 0.7141507519932947
+      }
+    ]
+  },
+  {
+    "model": "GNN+Autoencoder",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 29,
+    "best_value": 0.8360380955408646,
+    "top5_values": [
+      0.8360380955408646,
+      0.8354331099984951,
+      0.8348902551114866,
+      0.8348046038547263,
+      0.8342088229998001
+    ],
+    "top5_spread": 0.001829272541064464,
+    "total_search_seconds": 1491.52731,
+    "mean_trial_seconds": 29.8305462,
+    "param_importance": {
+      "hidden_dim": 0.21793103222297797,
+      "learning_rate": 0.21747986613975334,
+      "dropout": 0.20184085473855484,
+      "alpha": 0.1893618344679175,
+      "latent_dim": 0.12870749812010265,
+      "weight_decay": 0.044678914310693596
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.21357204043189557,
+        "learning_rate": 0.010825167073861358,
+        "weight_decay": 2.381878659491673e-06,
+        "alpha": 0.8380086685383679
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 64,
+        "dropout": 0.15477798137486065,
+        "learning_rate": 0.015779265958147496,
+        "weight_decay": 7.868540263633555e-06,
+        "alpha": 0.8188579484922025
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.21395969623935368,
+        "learning_rate": 0.011099867763634603,
+        "weight_decay": 3.0340098076693837e-06,
+        "alpha": 0.7999959109720446
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.15759309753001555,
+        "learning_rate": 0.014289342665241104,
+        "weight_decay": 9.053853704215567e-06,
+        "alpha": 0.6898921420000504
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.14532592175749293,
+        "learning_rate": 0.014515516749187827,
+        "weight_decay": 1.8004156784170382e-06,
+        "alpha": 0.8498431432429824
+      }
+    ]
+  },
+  {
+    "model": "EvolveGCN-H",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 20,
+    "n_complete": 13,
+    "best_value": 0.24453379348726964,
+    "top5_values": [
+      0.24453379348726964,
+      0.24141908400244227,
+      0.24005031483559466,
+      0.23870390078208445,
+      0.23675739898640838
+    ],
+    "top5_spread": 0.007776394500861261,
+    "total_search_seconds": 2631.212803,
+    "mean_trial_seconds": 131.56064014999998,
+    "param_importance": {
+      "hidden_dim": 0.43104284302207463,
+      "dropout": 0.2430704458365651,
+      "learning_rate": 0.20928854595667779,
+      "weight_decay": 0.11659816518468233
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "dropout": 0.40124749587905484,
+        "learning_rate": 0.0002533527637173162,
+        "weight_decay": 9.749035981710612e-06
+      },
+      {
+        "hidden_dim": 32,
+        "dropout": 0.5896346663146798,
+        "learning_rate": 0.00022834524638506981,
+        "weight_decay": 6.941250398805189e-05
+      },
+      {
+        "hidden_dim": 32,
+        "dropout": 0.5918052260246736,
+        "learning_rate": 0.021502071779840183,
+        "weight_decay": 4.779881657619063e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.5349050332848303,
+        "learning_rate": 0.00021543930186526875,
+        "weight_decay": 0.0006182796881049889
+      },
+      {
+        "hidden_dim": 32,
+        "dropout": 0.33328092033079076,
+        "learning_rate": 0.041910696653182346,
+        "weight_decay": 1.8187020675741908e-05
+      }
+    ]
+  },
+  {
+    "model": "EvolveGCN-H",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 20,
+    "n_complete": 15,
+    "best_value": 0.40668653867745047,
+    "top5_values": [
+      0.40668653867745047,
+      0.3882687870735346,
+      0.367129023051018,
+      0.3598367333881152,
+      0.35245900137300606
+    ],
+    "top5_spread": 0.054227537304444406,
+    "total_search_seconds": 4839.731073,
+    "mean_trial_seconds": 241.98655365,
+    "param_importance": {
+      "learning_rate": 0.6965388571634051,
+      "dropout": 0.2459703555796294,
+      "hidden_dim": 0.0408132108127397,
+      "weight_decay": 0.016677576444225826
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "dropout": 0.10133819911149529,
+        "learning_rate": 0.04213141700594595,
+        "weight_decay": 1.6304484387274542e-06
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.14196487732211358,
+        "learning_rate": 0.043712328323978776,
+        "weight_decay": 0.004494344613009855
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.10247483374765373,
+        "learning_rate": 0.03349081253344481,
+        "weight_decay": 1.1789316212357732e-06
+      },
+      {
+        "hidden_dim": 32,
+        "dropout": 0.19665510401234101,
+        "learning_rate": 0.049035544524637764,
+        "weight_decay": 7.512929020885921e-05
+      },
+      {
+        "hidden_dim": 64,
+        "dropout": 0.2619471985638503,
+        "learning_rate": 0.04973914841651868,
+        "weight_decay": 0.0003032337746415731
+      }
+    ]
+  },
+  {
+    "model": "XGBoost-raw",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 17,
+    "best_value": 0.9263088301731267,
+    "top5_values": [
+      0.9263088301731267,
+      0.9250873505483754,
+      0.9238106740816063,
+      0.9237410038880679,
+      0.9236198570767037
+    ],
+    "top5_spread": 0.0026889730964230196,
+    "total_search_seconds": 890.552737,
+    "mean_trial_seconds": 17.81105474,
+    "param_importance": {
+      "xgb_learning_rate": 0.5385640600069703,
+      "xgb_max_depth": 0.23804519363365245,
+      "xgb_n_estimators": 0.21008975597538312,
+      "scale_pos_weight_on": 0.01330099038399405
+    },
+    "top5_params": [
+      {
+        "xgb_n_estimators": 250,
+        "xgb_max_depth": 5,
+        "xgb_learning_rate": 0.15161959755915733,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 300,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.06939817807370034,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 250,
+        "xgb_max_depth": 5,
+        "xgb_learning_rate": 0.1345676730306053,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 200,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.19215695782925685,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 250,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.1408978814919124,
+        "scale_pos_weight_on": false
+      }
+    ]
+  },
+  {
+    "model": "XGBoost-raw",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 25,
+    "best_value": 0.9882402016280217,
+    "top5_values": [
+      0.9882402016280217,
+      0.9880769664266079,
+      0.9880684546775054,
+      0.9880624646857157,
+      0.988048924341571
+    ],
+    "top5_spread": 0.0001912772864507417,
+    "total_search_seconds": 2457.634093,
+    "mean_trial_seconds": 49.15268186,
+    "param_importance": {
+      "xgb_learning_rate": 0.885443111124398,
+      "xgb_n_estimators": 0.09360277083677872,
+      "xgb_max_depth": 0.016868149307380734,
+      "scale_pos_weight_on": 0.004085968731442597
+    },
+    "top5_params": [
+      {
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.06866387613903889,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.21525104958895894,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 5,
+        "xgb_learning_rate": 0.1868329927361248,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 500,
+        "xgb_max_depth": 6,
+        "xgb_learning_rate": 0.13972333876265394,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 500,
+        "xgb_max_depth": 5,
+        "xgb_learning_rate": 0.20578688598850003,
+        "scale_pos_weight_on": true
+      }
+    ]
+  },
+  {
+    "model": "KNN-raw",
+    "dataset": "elliptic",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 42,
+    "best_value": 0.6870350245851949,
+    "top5_values": [
+      0.6870350245851949,
+      0.6870350245851949,
+      0.6870350245851949,
+      0.6870350245851949,
+      0.6870350245851949
+    ],
+    "top5_spread": 0.0,
+    "total_search_seconds": 587.56251,
+    "mean_trial_seconds": 11.7512502,
+    "param_importance": {
+      "k_neighbors": 0.6516342489416405,
+      "knn_weights": 0.34836575105835954
+    },
+    "top5_params": [
+      {
+        "k_neighbors": 30,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 30,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 30,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 30,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 30,
+        "knn_weights": "distance"
+      }
+    ]
+  },
+  {
+    "model": "KNN-raw",
+    "dataset": "elliptic",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 21,
+    "best_value": 0.8966561926678086,
+    "top5_values": [
+      0.8966561926678086,
+      0.8966561926678086,
+      0.8966561926678086,
+      0.8966561926678086,
+      0.8966561926678086
+    ],
+    "top5_spread": 0.0,
+    "total_search_seconds": 477.866553,
+    "mean_trial_seconds": 9.557331060000001,
+    "param_importance": {
+      "k_neighbors": 0.5957667213572535,
+      "knn_weights": 0.4042332786427465
+    },
+    "top5_params": [
+      {
+        "k_neighbors": 13,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 13,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 13,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 13,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 13,
+        "knn_weights": "distance"
+      }
+    ]
+  },
+  {
+    "model": "GCN",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 34,
+    "best_value": 0.7194793671805373,
+    "top5_values": [
+      0.7194793671805373,
+      0.7191950223736315,
+      0.7183879930366299,
+      0.7183103874851575,
+      0.7180934173742977
+    ],
+    "top5_spread": 0.001385949806239628,
+    "total_search_seconds": 445.45126500000003,
+    "mean_trial_seconds": 8.909025300000001,
+    "param_importance": {
+      "learning_rate": 0.714699830327952,
+      "weight_decay": 0.14160720971726132,
+      "dropout": 0.09736974300897605,
+      "hidden_dim": 0.04632321694581066
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "dropout": 0.16592516460502052,
+        "learning_rate": 0.022515841857021227,
+        "weight_decay": 2.6706179137284096e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.14871588061663066,
+        "learning_rate": 0.025194623303207903,
+        "weight_decay": 3.061495592652062e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.18468635944183956,
+        "learning_rate": 0.015994192353871287,
+        "weight_decay": 5.935832203385465e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.15552974887506785,
+        "learning_rate": 0.022101411318947228,
+        "weight_decay": 3.673341058322339e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.13916432917858862,
+        "learning_rate": 0.029557642176980824,
+        "weight_decay": 2.3473406228555037e-05
+      }
+    ]
+  },
+  {
+    "model": "GCN",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 34,
+    "best_value": 0.6849646554479089,
+    "top5_values": [
+      0.6849646554479089,
+      0.6825836809393235,
+      0.6816358795904482,
+      0.6810977168499865,
+      0.6802475609037559
+    ],
+    "top5_spread": 0.004717094544152922,
+    "total_search_seconds": 467.025568,
+    "mean_trial_seconds": 9.34051136,
+    "param_importance": {
+      "learning_rate": 0.6358588542812982,
+      "hidden_dim": 0.1481263299356656,
+      "weight_decay": 0.1196901362582029,
+      "dropout": 0.0963246795248333
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "dropout": 0.18817051252541117,
+        "learning_rate": 0.04845586593894229,
+        "weight_decay": 2.1254499835400242e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.13003534636662717,
+        "learning_rate": 0.02998770840762348,
+        "weight_decay": 5.003410077108147e-06
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.13089980400872173,
+        "learning_rate": 0.02805060057418102,
+        "weight_decay": 1.1088884861472719e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.24434442496931316,
+        "learning_rate": 0.04816640896429157,
+        "weight_decay": 1.889425712226605e-05
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.2860418963788567,
+        "learning_rate": 0.03407628063708932,
+        "weight_decay": 2.4165001057859648e-06
+      }
+    ]
+  },
+  {
+    "model": "GAT",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 34,
+    "best_value": 0.7684718761618523,
+    "top5_values": [
+      0.7684718761618523,
+      0.7645036413135896,
+      0.762348357324196,
+      0.7609434848686195,
+      0.7598968954283392
+    ],
+    "top5_spread": 0.008574980733513149,
+    "total_search_seconds": 798.446298,
+    "mean_trial_seconds": 15.96892596,
+    "param_importance": {
+      "learning_rate": 0.9187597611003612,
+      "dropout": 0.042234559809436946,
+      "weight_decay": 0.021412563793226255,
+      "hidden_dim": 0.015296151939381112,
+      "heads": 0.0022969633575944596
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.10080735225054267,
+        "learning_rate": 0.03192612393666895,
+        "weight_decay": 2.746536762108579e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.12672800266464662,
+        "learning_rate": 0.033425461530774025,
+        "weight_decay": 1.005763329513262e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.18647087350254832,
+        "learning_rate": 0.04853315143609581,
+        "weight_decay": 2.0513029099307342e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.12556954347901367,
+        "learning_rate": 0.02284964878638629,
+        "weight_decay": 1.0517457637873158e-06
+      },
+      {
+        "hidden_dim": 64,
+        "heads": 4,
+        "dropout": 0.10145774453767141,
+        "learning_rate": 0.046733444426712775,
+        "weight_decay": 2.364684219441381e-06
+      }
+    ]
+  },
+  {
+    "model": "GAT",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 37,
+    "best_value": 0.7439101112126332,
+    "top5_values": [
+      0.7439101112126332,
+      0.7395155928815615,
+      0.7338265832399353,
+      0.7337697746665703,
+      0.7311075589002883
+    ],
+    "top5_spread": 0.01280255231234484,
+    "total_search_seconds": 835.578836,
+    "mean_trial_seconds": 16.71157672,
+    "param_importance": {
+      "learning_rate": 0.6189559553883156,
+      "dropout": 0.2886919493921791,
+      "weight_decay": 0.05457782911887872,
+      "hidden_dim": 0.01937982008746598,
+      "heads": 0.018394446013160638
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 32,
+        "heads": 2,
+        "dropout": 0.21459087455502668,
+        "learning_rate": 0.03660372331465537,
+        "weight_decay": 1.0606966390627969e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 2,
+        "dropout": 0.20762489601047718,
+        "learning_rate": 0.036083335432036956,
+        "weight_decay": 2.794451916222493e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 2,
+        "dropout": 0.2159798132852029,
+        "learning_rate": 0.04981091108244013,
+        "weight_decay": 5.4462909570500825e-06
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 4,
+        "dropout": 0.12640708598676315,
+        "learning_rate": 0.02148732607580719,
+        "weight_decay": 2.8540415252875377e-05
+      },
+      {
+        "hidden_dim": 32,
+        "heads": 2,
+        "dropout": 0.21332538782687652,
+        "learning_rate": 0.03584495278758877,
+        "weight_decay": 2.932663850426466e-06
+      }
+    ]
+  },
+  {
+    "model": "GCN+XGBoost",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 30,
+    "best_value": 0.8372840216172761,
+    "top5_values": [
+      0.8372840216172761,
+      0.8368584097987636,
+      0.8366604771089795,
+      0.8366346580062245,
+      0.8332839630766958
+    ],
+    "top5_spread": 0.004000058540580276,
+    "total_search_seconds": 908.465222,
+    "mean_trial_seconds": 18.16930444,
+    "param_importance": {
+      "learning_rate": 0.45631791307620945,
+      "gcn_hidden_dim": 0.3312764732849014,
+      "gcn_dropout": 0.11056497145064638,
+      "xgb_max_depth": 0.04632655362487492,
+      "xgb_n_estimators": 0.03686784588559591,
+      "xgb_learning_rate": 0.011197125602879677,
+      "weight_decay": 0.007449117074892273
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.3249020757259077,
+        "learning_rate": 0.04675949811072129,
+        "weight_decay": 2.304738061639138e-06,
+        "xgb_n_estimators": 100,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.08301661459631872
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.35570149875032453,
+        "learning_rate": 0.021987815273128725,
+        "weight_decay": 3.1469129790113948e-06,
+        "xgb_n_estimators": 50,
+        "xgb_max_depth": 10,
+        "xgb_learning_rate": 0.11132623466431325
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.3513672620399708,
+        "learning_rate": 0.023053802613468146,
+        "weight_decay": 1.0038759538509648e-06,
+        "xgb_n_estimators": 50,
+        "xgb_max_depth": 10,
+        "xgb_learning_rate": 0.16959875444512074
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.311345813089284,
+        "learning_rate": 0.04884433593855614,
+        "weight_decay": 2.961853230697109e-06,
+        "xgb_n_estimators": 150,
+        "xgb_max_depth": 9,
+        "xgb_learning_rate": 0.03325056746871017
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.22904531330646155,
+        "learning_rate": 0.023635798506324527,
+        "weight_decay": 3.116116814085149e-06,
+        "xgb_n_estimators": 100,
+        "xgb_max_depth": 10,
+        "xgb_learning_rate": 0.1260373142122965
+      }
+    ]
+  },
+  {
+    "model": "GCN+XGBoost",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 39,
+    "best_value": 0.8579014650651997,
+    "top5_values": [
+      0.8579014650651997,
+      0.8560346337803695,
+      0.8556826681978187,
+      0.8556259072351015,
+      0.8549626646837728
+    ],
+    "top5_spread": 0.0029388003814269092,
+    "total_search_seconds": 1667.664789,
+    "mean_trial_seconds": 33.353295779999996,
+    "param_importance": {
+      "gcn_hidden_dim": 0.8180786951925662,
+      "gcn_dropout": 0.08733670916620924,
+      "learning_rate": 0.050431964547182,
+      "xgb_learning_rate": 0.03320261085562785,
+      "xgb_n_estimators": 0.005168256741452374,
+      "xgb_max_depth": 0.004789731674372233,
+      "weight_decay": 0.0009920318225901405
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.10070914436060456,
+        "learning_rate": 0.01862414406271841,
+        "weight_decay": 1.836109251733062e-06,
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 6,
+        "xgb_learning_rate": 0.029270265966339113
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.15930842392539707,
+        "learning_rate": 0.016628598151922275,
+        "weight_decay": 5.4600341735479215e-05,
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 7,
+        "xgb_learning_rate": 0.01900726544999541
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.17220153656233678,
+        "learning_rate": 0.015945315509960943,
+        "weight_decay": 4.9625568159816036e-05,
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 7,
+        "xgb_learning_rate": 0.01697218086530955
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.16993156836886453,
+        "learning_rate": 0.01013676495635194,
+        "weight_decay": 1.880093903870994e-05,
+        "xgb_n_estimators": 350,
+        "xgb_max_depth": 6,
+        "xgb_learning_rate": 0.028777705001717547
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.29444207255557414,
+        "learning_rate": 0.02444271858046537,
+        "weight_decay": 2.3281068462979437e-06,
+        "xgb_n_estimators": 200,
+        "xgb_max_depth": 6,
+        "xgb_learning_rate": 0.09714102553212348
+      }
+    ]
+  },
+  {
+    "model": "GCN+KNN",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 23,
+    "best_value": 0.7856327451772153,
+    "top5_values": [
+      0.7856327451772153,
+      0.7853956038388009,
+      0.7793717166311639,
+      0.779027572290911,
+      0.7781349524958767
+    ],
+    "top5_spread": 0.007497792681338544,
+    "total_search_seconds": 396.134862,
+    "mean_trial_seconds": 7.92269724,
+    "param_importance": {
+      "learning_rate": 0.4842876188100293,
+      "weight_decay": 0.2878717707399578,
+      "k_neighbors": 0.18916421349555074,
+      "gcn_dropout": 0.022127782410957048,
+      "gcn_hidden_dim": 0.016548614543505334
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.16469539807775335,
+        "learning_rate": 0.028211561760103542,
+        "weight_decay": 4.586130384225213e-06,
+        "k_neighbors": 27
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.26747534608047896,
+        "learning_rate": 0.04956908586321631,
+        "weight_decay": 1.833505929470766e-06,
+        "k_neighbors": 27
+      },
+      {
+        "gcn_hidden_dim": 128,
+        "gcn_dropout": 0.18553862215592976,
+        "learning_rate": 0.04928544165823839,
+        "weight_decay": 1.6200696451544972e-06,
+        "k_neighbors": 27
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.17937279291726432,
+        "learning_rate": 0.029745714337076703,
+        "weight_decay": 3.1099811636356697e-06,
+        "k_neighbors": 27
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.277439933587488,
+        "learning_rate": 0.01947481485192055,
+        "weight_decay": 1.0928196788315531e-05,
+        "k_neighbors": 28
+      }
+    ]
+  },
+  {
+    "model": "GCN+KNN",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 47,
+    "best_value": 0.8209988702779052,
+    "top5_values": [
+      0.8209988702779052,
+      0.8200300426755781,
+      0.8189486947460549,
+      0.8178643937618464,
+      0.8171356935342897
+    ],
+    "top5_spread": 0.0038631767436154707,
+    "total_search_seconds": 627.097616,
+    "mean_trial_seconds": 12.54195232,
+    "param_importance": {
+      "weight_decay": 0.4209481660125834,
+      "learning_rate": 0.34785540254528624,
+      "k_neighbors": 0.08187240574423867,
+      "gcn_hidden_dim": 0.07995984050282683,
+      "gcn_dropout": 0.06936418519506476
+    },
+    "top5_params": [
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.20275242339434815,
+        "learning_rate": 0.04329783968941609,
+        "weight_decay": 1.4402133716646627e-05,
+        "k_neighbors": 25
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.20595358781139528,
+        "learning_rate": 0.049216380625479346,
+        "weight_decay": 1.3583161675273342e-05,
+        "k_neighbors": 20
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.20509784037948717,
+        "learning_rate": 0.04471705512632275,
+        "weight_decay": 1.4232310480592728e-05,
+        "k_neighbors": 25
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.21289337758943705,
+        "learning_rate": 0.048382201736387756,
+        "weight_decay": 1.6621838711800035e-05,
+        "k_neighbors": 20
+      },
+      {
+        "gcn_hidden_dim": 64,
+        "gcn_dropout": 0.21405046360044278,
+        "learning_rate": 0.04519481108422355,
+        "weight_decay": 1.6013554218981523e-05,
+        "k_neighbors": 20
+      }
+    ]
+  },
+  {
+    "model": "GCN+LSTM",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 33,
+    "best_value": 0.8333924633407965,
+    "top5_values": [
+      0.8333924633407965,
+      0.8308142086984684,
+      0.8308000344938729,
+      0.8299543972293529,
+      0.8298578553555414
+    ],
+    "top5_spread": 0.003534607985255178,
+    "total_search_seconds": 403.383247,
+    "mean_trial_seconds": 8.06766494,
+    "param_importance": {
+      "learning_rate": 0.47288154893457673,
+      "dropout": 0.3378159284628484,
+      "gcn_hidden": 0.09522864759441639,
+      "lstm_hidden": 0.05714807674960095,
+      "weight_decay": 0.036925798258557345
+    },
+    "top5_params": [
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.39402102014980234,
+        "learning_rate": 0.031793304086279325,
+        "weight_decay": 1.0145426045751713e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 32,
+        "dropout": 0.46024202720789953,
+        "learning_rate": 0.030633429057814195,
+        "weight_decay": 1.0280848498444177e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 32,
+        "dropout": 0.42418144203013114,
+        "learning_rate": 0.02383515055512115,
+        "weight_decay": 1.0641207456486814e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.48560574478951474,
+        "learning_rate": 0.01923864769261941,
+        "weight_decay": 2.5637905510363454e-06
+      },
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 128,
+        "dropout": 0.3947953107895748,
+        "learning_rate": 0.03249934341426108,
+        "weight_decay": 2.1563494033407154e-06
+      }
+    ]
+  },
+  {
+    "model": "GCN+LSTM",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 39,
+    "best_value": 0.8545281530241567,
+    "top5_values": [
+      0.8545281530241567,
+      0.8512677513158137,
+      0.8510157254087252,
+      0.8507579944155473,
+      0.8506091853645922
+    ],
+    "top5_spread": 0.003918967659564565,
+    "total_search_seconds": 490.044967,
+    "mean_trial_seconds": 9.800899339999999,
+    "param_importance": {
+      "learning_rate": 0.45058314483314665,
+      "weight_decay": 0.2205241342157806,
+      "dropout": 0.21073900005675247,
+      "gcn_hidden": 0.08979996267000202,
+      "lstm_hidden": 0.028353758224318265
+    },
+    "top5_params": [
+      {
+        "gcn_hidden": 128,
+        "lstm_hidden": 64,
+        "dropout": 0.33178194442026915,
+        "learning_rate": 0.028251819922327392,
+        "weight_decay": 1.7828236450562076e-06
+      },
+      {
+        "gcn_hidden": 64,
+        "lstm_hidden": 128,
+        "dropout": 0.3872279607999559,
+        "learning_rate": 0.017374088306305265,
+        "weight_decay": 1.0470463137097967e-06
+      },
+      {
+        "gcn_hidden": 64,
+        "lstm_hidden": 128,
+        "dropout": 0.418751831983011,
+        "learning_rate": 0.027771711635899386,
+        "weight_decay": 4.092586708388473e-06
+      },
+      {
+        "gcn_hidden": 64,
+        "lstm_hidden": 128,
+        "dropout": 0.41266539479471515,
+        "learning_rate": 0.017640363764702426,
+        "weight_decay": 2.511020576200301e-06
+      },
+      {
+        "gcn_hidden": 64,
+        "lstm_hidden": 128,
+        "dropout": 0.44493813992254133,
+        "learning_rate": 0.03174893428402546,
+        "weight_decay": 2.2811102974303372e-06
+      }
+    ]
+  },
+  {
+    "model": "GNN+Autoencoder",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 33,
+    "best_value": 0.7270268902031336,
+    "top5_values": [
+      0.7270268902031336,
+      0.7264953621000934,
+      0.725818134896439,
+      0.7256655630892459,
+      0.724894654668212
+    ],
+    "top5_spread": 0.0021322355349215893,
+    "total_search_seconds": 814.04665,
+    "mean_trial_seconds": 16.280933,
+    "param_importance": {
+      "learning_rate": 0.6433294427028176,
+      "weight_decay": 0.11430443439800692,
+      "hidden_dim": 0.1117939371472072,
+      "dropout": 0.04864912551004443,
+      "latent_dim": 0.04110528083596474,
+      "alpha": 0.04081777940595919
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.11413514922307597,
+        "learning_rate": 0.02245490437975194,
+        "weight_decay": 1.0877626554136915e-06,
+        "alpha": 0.438809860513117
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.20001004529559938,
+        "learning_rate": 0.019010559556127002,
+        "weight_decay": 1.7214386677723356e-06,
+        "alpha": 0.3677858041308147
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.1522455227582803,
+        "learning_rate": 0.02258129297624715,
+        "weight_decay": 2.276333836581471e-06,
+        "alpha": 0.3564710264240944
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.17576452587451996,
+        "learning_rate": 0.01975116591987579,
+        "weight_decay": 5.219502692408281e-06,
+        "alpha": 0.3495102018751928
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 32,
+        "dropout": 0.1468636864863603,
+        "learning_rate": 0.014947574582884081,
+        "weight_decay": 1.0208215962341353e-05,
+        "alpha": 0.6703516049019299
+      }
+    ]
+  },
+  {
+    "model": "GNN+Autoencoder",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 37,
+    "best_value": 0.6951472483363333,
+    "top5_values": [
+      0.6951472483363333,
+      0.6940382072642083,
+      0.6929611386166291,
+      0.6903866023330967,
+      0.6898460010249401
+    ],
+    "top5_spread": 0.0053012473113932534,
+    "total_search_seconds": 901.309988,
+    "mean_trial_seconds": 18.02619976,
+    "param_importance": {
+      "learning_rate": 0.5291335793387674,
+      "alpha": 0.19898431243380346,
+      "hidden_dim": 0.1600881589779657,
+      "dropout": 0.054462390726665866,
+      "weight_decay": 0.028717910626326622,
+      "latent_dim": 0.028613647896470907
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.1934022177102031,
+        "learning_rate": 0.03050633321587688,
+        "weight_decay": 1.872568717654516e-06,
+        "alpha": 0.5965821193622509
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.20652441329023363,
+        "learning_rate": 0.03448567634581395,
+        "weight_decay": 1.564133686557335e-06,
+        "alpha": 0.4018185948659666
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.19738412226654165,
+        "learning_rate": 0.03239036830681366,
+        "weight_decay": 2.2982417025185817e-06,
+        "alpha": 0.41358378264973633
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.2199104444782191,
+        "learning_rate": 0.035489319836035954,
+        "weight_decay": 3.765375246547038e-06,
+        "alpha": 0.4206123087743886
+      },
+      {
+        "hidden_dim": 128,
+        "latent_dim": 16,
+        "dropout": 0.19738354128350752,
+        "learning_rate": 0.032172985822088565,
+        "weight_decay": 2.2661590962142247e-06,
+        "alpha": 0.5135399213996851
+      }
+    ]
+  },
+  {
+    "model": "EvolveGCN-H",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 42,
+    "best_value": 0.5486136162120665,
+    "top5_values": [
+      0.5486136162120665,
+      0.5381177698383781,
+      0.5377564090612761,
+      0.5330305542378976,
+      0.5293008345688117
+    ],
+    "top5_spread": 0.019312781643254784,
+    "total_search_seconds": 8276.843437,
+    "mean_trial_seconds": 165.53686874,
+    "param_importance": {
+      "learning_rate": 0.8879558106641986,
+      "weight_decay": 0.0752198204196445,
+      "dropout": 0.02066246036382387,
+      "hidden_dim": 0.01616190855233312
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 128,
+        "dropout": 0.2713882329585711,
+        "learning_rate": 0.04980944960377751,
+        "weight_decay": 0.001672949819327436
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.5133051701827481,
+        "learning_rate": 0.04880840272445031,
+        "weight_decay": 0.0010335093454288489
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.4832336010629394,
+        "learning_rate": 0.03318460229599928,
+        "weight_decay": 0.0009464129010020433
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.5602107921672219,
+        "learning_rate": 0.04633763288052138,
+        "weight_decay": 0.0027954973134059658
+      },
+      {
+        "hidden_dim": 128,
+        "dropout": 0.4386937335956667,
+        "learning_rate": 0.020614464775650012,
+        "weight_decay": 0.0012955201998449393
+      }
+    ]
+  },
+  {
+    "model": "EvolveGCN-H",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 33,
+    "best_value": 0.5914904596316107,
+    "top5_values": [
+      0.5914904596316107,
+      0.5461375810705469,
+      0.5373591050963943,
+      0.5357712990666751,
+      0.5297757206656899
+    ],
+    "top5_spread": 0.061714738965920835,
+    "total_search_seconds": 10770.968835,
+    "mean_trial_seconds": 215.4193767,
+    "param_importance": {
+      "learning_rate": 0.9546139750872774,
+      "dropout": 0.02604965917913608,
+      "hidden_dim": 0.014936433837067517,
+      "weight_decay": 0.004399931896518935
+    },
+    "top5_params": [
+      {
+        "hidden_dim": 64,
+        "dropout": 0.12137973288546115,
+        "learning_rate": 0.048614362635259596,
+        "weight_decay": 0.00012111527054842959
+      },
+      {
+        "hidden_dim": 64,
+        "dropout": 0.10677951543361068,
+        "learning_rate": 0.049321557992982795,
+        "weight_decay": 9.44747941297637e-05
+      },
+      {
+        "hidden_dim": 64,
+        "dropout": 0.2424976438239379,
+        "learning_rate": 0.049743018169167465,
+        "weight_decay": 1.0401110231393143e-05
+      },
+      {
+        "hidden_dim": 64,
+        "dropout": 0.10872877212377209,
+        "learning_rate": 0.04533643387301161,
+        "weight_decay": 0.0001210412736015883
+      },
+      {
+        "hidden_dim": 64,
+        "dropout": 0.19408836547106148,
+        "learning_rate": 0.04930898737202821,
+        "weight_decay": 0.00022530449193103647
+      }
+    ]
+  },
+  {
+    "model": "XGBoost-raw",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 29,
+    "best_value": 0.9178774638980984,
+    "top5_values": [
+      0.9178774638980984,
+      0.9171168302288055,
+      0.9167300174177122,
+      0.9163966331758975,
+      0.9159157354951487
+    ],
+    "top5_spread": 0.001961728402949725,
+    "total_search_seconds": 182.643882,
+    "mean_trial_seconds": 3.65287764,
+    "param_importance": {
+      "xgb_max_depth": 0.402645018131129,
+      "xgb_learning_rate": 0.3104910028773452,
+      "scale_pos_weight_on": 0.18597622865414154,
+      "xgb_n_estimators": 0.10088775033738444
+    },
+    "top5_params": [
+      {
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.01819629288912223,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 350,
+        "xgb_max_depth": 3,
+        "xgb_learning_rate": 0.028670901875755835,
+        "scale_pos_weight_on": true
+      },
+      {
+        "xgb_n_estimators": 350,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.021781127020232317,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 450,
+        "xgb_max_depth": 3,
+        "xgb_learning_rate": 0.022386778619205325,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 400,
+        "xgb_max_depth": 4,
+        "xgb_learning_rate": 0.03486131416646558,
+        "scale_pos_weight_on": false
+      }
+    ]
+  },
+  {
+    "model": "XGBoost-raw",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 18,
+    "best_value": 0.9364920355090011,
+    "top5_values": [
+      0.9364920355090011,
+      0.9358027163269209,
+      0.9358020259594937,
+      0.935658444978101,
+      0.9356249198433814
+    ],
+    "top5_spread": 0.0008671156656196999,
+    "total_search_seconds": 191.212269,
+    "mean_trial_seconds": 3.82424538,
+    "param_importance": {
+      "xgb_n_estimators": 0.388826705397724,
+      "xgb_max_depth": 0.36428021983177933,
+      "scale_pos_weight_on": 0.1259614985095536,
+      "xgb_learning_rate": 0.1209315762609432
+    },
+    "top5_params": [
+      {
+        "xgb_n_estimators": 150,
+        "xgb_max_depth": 7,
+        "xgb_learning_rate": 0.03599347007020476,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 50,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.16629028282467323,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 150,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.05556116689037746,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 100,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.05068447128630706,
+        "scale_pos_weight_on": false
+      },
+      {
+        "xgb_n_estimators": 100,
+        "xgb_max_depth": 8,
+        "xgb_learning_rate": 0.06932128192680824,
+        "scale_pos_weight_on": false
+      }
+    ]
+  },
+  {
+    "model": "KNN-raw",
+    "dataset": "ethereum",
+    "condition": "temporal",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 34,
+    "best_value": 0.7745914548840978,
+    "top5_values": [
+      0.7745914548840978,
+      0.7745914548840978,
+      0.7745914548840978,
+      0.7745914548840978,
+      0.7745914548840978
+    ],
+    "top5_spread": 0.0,
+    "total_search_seconds": 75.625054,
+    "mean_trial_seconds": 1.51250108,
+    "param_importance": {
+      "knn_weights": 0.9331056290823619,
+      "k_neighbors": 0.06689437091763809
+    },
+    "top5_params": [
+      {
+        "k_neighbors": 25,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 25,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 25,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 25,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 25,
+        "knn_weights": "distance"
+      }
+    ]
+  },
+  {
+    "model": "KNN-raw",
+    "dataset": "ethereum",
+    "condition": "random70",
+    "source": "journal_search",
+    "n_trials": 50,
+    "n_complete": 17,
+    "best_value": 0.8161699296578618,
+    "top5_values": [
+      0.8161699296578618,
+      0.8155128767631006,
+      0.8155128767631006,
+      0.8155128767631006,
+      0.8155128767631006
+    ],
+    "top5_spread": 0.0006570528947612564,
+    "total_search_seconds": 93.796603,
+    "mean_trial_seconds": 1.87593206,
+    "param_importance": {
+      "knn_weights": 0.8342284521045533,
+      "k_neighbors": 0.16577154789544676
+    },
+    "top5_params": [
+      {
+        "k_neighbors": 23,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 18,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 18,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 18,
+        "knn_weights": "distance"
+      },
+      {
+        "k_neighbors": 18,
+        "knn_weights": "distance"
+      }
+    ]
+  }
+]
