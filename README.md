@@ -1,4 +1,4 @@
-# When does the graph help? GNNs for blockchain fraud detection
+# When does the graph help? Predictive performance, robustness, and reliability of graph neural networks for blockchain fraud detection.
 
 Code, tuned settings and result tables for the paper *When does the graph help? Predictive performance, robustness and reliability of graph neural networks for blockchain fraud detection*.
 
