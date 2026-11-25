@@ -7,7 +7,7 @@ The study compares seven GNN and hybrid models (GCN, GAT, GCN+XGBoost, GCN+KNN, 
 > Citation: to be added after publication.
 
 ## Repository layout
-
+```
 
 configs/
     best_params.json             tuned settings, one entry per model|dataset|split (best Optuna trial)
@@ -31,7 +31,7 @@ src/
     analysis_reliability.py      reliability tables from the saved predictions 
     analysis_statistics.py       statistical tests and the design synthesis
     results/                         the numbers behind every table and figure
-
+```
 
 ## Setup
 
