@@ -20,18 +20,14 @@ Ethereum
 import argparse
 import os
 import pickle
-
 import numpy as np
-
 import jconfig as C
 from jutils import write_json, write_npz, file_sha256, now, get_logger
 
 LOG = None
 
 
-# =====================================================================
 # Common helpers
-# =====================================================================
 
 def save_graph(path, g):
     """g: dict with x, edge_index, y, labeled, node_id, time, has_features (+ optional extras)."""
@@ -43,7 +39,6 @@ def save_graph(path, g):
 
 
 def unique_directed_edges(src, dst, ts=None):
-    """Collapse parallel edges, drop self-loops. Returns (edge_index, count, last_ts)."""
     src = np.asarray(src, dtype=np.int64)
     dst = np.asarray(dst, dtype=np.int64)
     keep = src != dst
@@ -67,7 +62,6 @@ def unique_directed_edges(src, dst, ts=None):
 
 
 def induced_subgraph(edge_index, node_mask):
-    """Keep edges with both endpoints in node_mask; remap to 0..k-1."""
     node_ids = np.nonzero(node_mask)[0]
     remap = -np.ones(node_mask.shape[0], dtype=np.int64)
     remap[node_ids] = np.arange(node_ids.shape[0])
@@ -85,10 +79,7 @@ def graph_stats(g):
             "n_features": int(g["x"].shape[1])}
 
 
-# =====================================================================
 # Elliptic
-# =====================================================================
-
 def build_elliptic(force=False):
     import pandas as pd
     out = C.DIRS["data_elliptic"]
@@ -189,10 +180,7 @@ def build_elliptic(force=False):
     LOG.info("Elliptic done.")
 
 
-# =====================================================================
 # Ethereum (TBNS split graphs)
-# =====================================================================
-
 def month_of(ts):
     b = np.asarray(C.MONTH_BOUNDARIES, dtype=np.float64)
     return np.clip(np.searchsorted(b, np.asarray(ts, dtype=np.float64), side="right"), 1, C.ETHEREUM_N_MONTHS)
@@ -213,7 +201,6 @@ def load_tbns_split(path, drop_idx):
             "ts_min": int(d["ts_min"]), "ts_max": int(d["ts_max"]),
             "feature_names": list(d["feature_names"]), "stats": d.get("stats", {})}
 
-
 def _node_order(seeds, nodes):
     seed_set = set(seeds)
     others = sorted(n for n in nodes if n not in seed_set)
@@ -222,7 +209,6 @@ def _node_order(seeds, nodes):
 
 
 def _seed_eval_month(seeds, multi, month_lo, month_hi):
-    """Month of each seed's last transaction inside [month_lo, month_hi]; fallback month_hi."""
     last = {}
     if multi:
         months = month_of([t for _, _, _, t in multi])
@@ -235,7 +221,6 @@ def _seed_eval_month(seeds, multi, month_lo, month_hi):
 
 
 def _monthly_snapshots(order, idx, x, y_all, labeled_all, has_feat, multi, seed_month, n_seeds, months):
-    """One snapshot per month: nodes active that month + seeds evaluated that month."""
     src = np.array([idx[u] for u, _, _, _ in multi], dtype=np.int64)
     dst = np.array([idx[v] for _, v, _, _ in multi], dtype=np.int64)
     mon = month_of([t for _, _, _, t in multi]) if multi else np.zeros(0, np.int64)
@@ -263,7 +248,6 @@ def _monthly_snapshots(order, idx, x, y_all, labeled_all, has_feat, multi, seed_
 
 
 def build_ethereum(force=False, name="ethereum", k=None):
-    """name = 'ethereum' (K = 3) or 'ethereum_k<k>'"""
     k = C.TBNS_K_MAIN if k is None else k
     pkl = C.ethereum_pkl_for_k(k)
     if not all(os.path.exists(p) for p in pkl.values()):
@@ -301,7 +285,7 @@ def build_ethereum(force=False, name="ethereum", k=None):
             "source_sha256": {s: file_sha256(pkl[s]) for s in pkl},
             "splits": {}, "snapshots": {}}
 
-    # ---- temporal condition: one graph per split + monthly snapshots
+    # temporal condition: one graph per split + monthly snapshots
     for s in ["train", "val", "test"]:
         d = splits[s]
         order, idx = _node_order(d["seeds"], d["nodes"])
@@ -344,13 +328,13 @@ def build_ethereum(force=False, name="ethereum", k=None):
         assert lab_in_snaps == n_seeds, f"{s}: {lab_in_snaps} labelled in snapshots vs {n_seeds} seeds"
         LOG.info(f"  {s}: {st}")
 
-    # ---- overlap report
+    # overlap report
     seed_sets = {s: set(splits[s]["seeds"]) for s in splits}
     meta["seed_overlap"] = {"train_val": len(seed_sets["train"] & seed_sets["val"]),
                             "train_test": len(seed_sets["train"] & seed_sets["test"]),
                             "val_test": len(seed_sets["val"] & seed_sets["test"])}
 
-    # ---- random condition: union graph, raw features, first occurrence of a seed wins
+    # random condition: union graph, raw features, first occurrence of a seed wins
     seeds_u, X_u, y_u, origin, month_u = [], [], [], [], []
     seen = set()
     for s in ["train", "val", "test"]:
