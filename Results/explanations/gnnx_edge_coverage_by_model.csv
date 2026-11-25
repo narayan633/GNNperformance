@@ -1,0 +1,17 @@
+dataset,condition,model,n_edges,n_active,more_than_5_active,no_active,n
+elliptic,random70,GAT,3.08,2.03,0.05,0.3,1000
+elliptic,random70,GCN,3.08,2.03,0.05,0.3,1000
+elliptic,random70,GCN+LSTM,3.08,1.16,0.02,0.3,1000
+elliptic,random70,GNN+Autoencoder,3.08,2.03,0.05,0.3,1000
+elliptic,temporal,GAT,2.54,1.86,0.07,0.48,1000
+elliptic,temporal,GCN,2.54,1.86,0.07,0.48,1000
+elliptic,temporal,GCN+LSTM,2.54,1.07,0.03,0.48,1000
+elliptic,temporal,GNN+Autoencoder,2.54,1.86,0.07,0.48,1000
+ethereum,random70,GAT,1077.05,17.227,0.31,0.32,1000
+ethereum,random70,GCN,1077.05,17.23,0.31,0.32,1000
+ethereum,random70,GCN+LSTM,1077.05,0.09,0,0.92,1000
+ethereum,random70,GNN+Autoencoder,1077.05,17.23,0.31,0.32,1000
+ethereum,temporal,GAT,324.56,9.97,0.29,0.31,1000
+ethereum,temporal,GCN,324.56,9.97,0.29,0.31,1000
+ethereum,temporal,GCN+LSTM,324.56,0.26,0.01,0.97,1000
+ethereum,temporal,GNN+Autoencoder,324.56,9.97,0.29,0.31,1000
