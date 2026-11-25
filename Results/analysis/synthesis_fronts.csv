@@ -1,0 +1,5 @@
+dataset,condition,objectives_core,front_strict,front_eps,front_eps_with_shap,n_models
+elliptic,temporal,auc_prc_mean|noise5_delta_auc_prc|ece_mean|alert_flip|latency_ms_gpu,GCN|GAT|GCN+XGBoost|GCN+LSTM|GNN+Autoencoder|EvolveGCN-H|XGBoost-raw,GCN|GCN+XGBoost|GCN+LSTM|GNN+Autoencoder|XGBoost-raw,GCN|GCN+XGBoost|GCN+LSTM|GNN+Autoencoder,8
+elliptic,random70,auc_prc_mean|noise5_delta_auc_prc|ece_mean|alert_flip|latency_ms_gpu,GCN|GAT|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder|XGBoost-raw,GAT|GCN+XGBoost|GCN+LSTM|GNN+Autoencoder|XGBoost-raw,GAT|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder,8
+ethereum,temporal,auc_prc_mean|noise5_delta_auc_prc|ece_mean|alert_flip|latency_ms_gpu,GCN|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder|EvolveGCN-H|XGBoost-raw,GCN|GCN+XGBoost|GCN+KNN|GCN+LSTM|EvolveGCN-H|XGBoost-raw,GCN|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder,8
+ethereum,random70,auc_prc_mean|noise5_delta_auc_prc|ece_mean|alert_flip|latency_ms_gpu,GCN|GAT|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder|XGBoost-raw,GCN|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder|XGBoost-raw,GCN|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder,8

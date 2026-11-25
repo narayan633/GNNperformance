@@ -1,0 +1,2 @@
+version,models,tol_auc_prc_mean,tol_noise5_delta_auc_prc,tol_ece_mean,tol_alert_flip,tol_latency_ms_gpu,tol_shap_seed_jaccard,note
+2,GCN|GAT|GCN+XGBoost|GCN+KNN|GCN+LSTM|GNN+Autoencoder|EvolveGCN-H|XGBoost-raw,0.01,0.01,0.005,0.005,10% relative,0.05,"edge drop and CPU latency are reported for information, not used as objectives"
