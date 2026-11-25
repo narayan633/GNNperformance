@@ -10,8 +10,8 @@ The study compares seven GNN and hybrid models (GCN, GAT, GCN+XGBoost, GCN+KNN, 
 ```
 
 configs/
-    best_params.json             tuned settings, one entry per model|dataset|split (best Optuna trial)
-    search_spaces.md             tuning protocol and search spaces
+    best_params.json                                 tuned settings, one entry per model|dataset|split (best Optuna trial)
+    search_spaces.md                                 tuning protocol and search spaces
 src/
     jconfig.py                                       paths, seeds, splits, models and experiment definitions
     jutils.py                                        atomic writes, seeding, logging, run folders
