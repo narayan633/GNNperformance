@@ -3,14 +3,11 @@ Elliptic
       - 165 features (CSV columns 2-166), directed edges as released
       - temporal split: train 1-34, val 35-42, test 43-49
       - z-score fitted on the training period (all nodes), applied to all
-      - one induced subgraph per split, zero cross-split edges (checked)
-      - per-time-step snapshots for EvolveGCN-H
       - full graph with the released features for the random condition
 
 Ethereum
     Loaded from the TBNS split graphs (eth_train/val/test.pkl, K = 3):
       - neighbor_fraud_ratio dropped (it uses neighbour labels in train only)
-      - parallel transactions collapsed into one directed edge per node
         pair (count and last timestamp kept), self-loops removed
       - z-score fitted on training seed nodes; neighbour-only nodes have
         no features in the released files and are set to 0 (= training mean)
