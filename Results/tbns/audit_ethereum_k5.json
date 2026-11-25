@@ -1,0 +1,125 @@
+{
+  "dataset": "ethereum_k5",
+  "tbns_k": 5,
+  "built": "2026-11-12T17:18:02",
+  "metadata_splits": {
+    "train": {
+      "n_nodes": 9417,
+      "n_edges": 38552,
+      "n_labelled": 6004,
+      "n_fraud": 604,
+      "fraud_rate_pct": 10.0599600266489,
+      "n_features": 33,
+      "n_multi_edges": 566449,
+      "n_neighbour_only": 3413,
+      "n_edges_after_split_end": 0
+    },
+    "val": {
+      "n_nodes": 9648,
+      "n_edges": 43185,
+      "n_labelled": 6545,
+      "n_fraud": 360,
+      "fraud_rate_pct": 5.500381970970206,
+      "n_features": 33,
+      "n_multi_edges": 423703,
+      "n_neighbour_only": 3103,
+      "n_edges_after_split_end": 0
+    },
+    "test": {
+      "n_nodes": 13675,
+      "n_edges": 78608,
+      "n_labelled": 9950,
+      "n_fraud": 201,
+      "fraud_rate_pct": 2.020100502512563,
+      "n_features": 33,
+      "n_multi_edges": 691122,
+      "n_neighbour_only": 3725,
+      "n_edges_after_split_end": 0
+    }
+  },
+  "seed_overlap": {
+    "train_val": 6,
+    "train_test": 6,
+    "val_test": 19
+  },
+  "full_graph": {
+    "n_nodes": 30301,
+    "n_edges": 144140,
+    "n_labelled": 22468,
+    "n_fraud": 1165,
+    "fraud_rate_pct": 5.185152216485669,
+    "n_features": 33,
+    "n_multi_edges": 1099921
+  },
+  "splits": {
+    "train": {
+      "months": [
+        1,
+        33
+      ],
+      "n_nodes": 9417,
+      "n_edges": 38552,
+      "n_labelled": 6004,
+      "fraud_rate_pct": 10.0599600266489,
+      "neighbour_only_share": 0.3624296485080174,
+      "density": 0.00043477833297199544,
+      "mean_parallel_tx_per_edge": 14.625415023863873,
+      "edges_after_window_end": 0,
+      "edges_before_window_start": 0,
+      "edges_after_window_end_note": "last transaction timestamp of a collapsed edge compared with split end",
+      "seed_degree_median": 1.0,
+      "seed_degree_p95": 9.0,
+      "isolated_seed_share": 0.0,
+      "seeds_with_labelled_neighbour_share": 0.02614923384410393,
+      "fraud_seeds_with_fraud_neighbour_share": 0.11754966887417219
+    },
+    "val": {
+      "months": [
+        34,
+        35
+      ],
+      "n_nodes": 9648,
+      "n_edges": 43185,
+      "n_labelled": 6545,
+      "fraud_rate_pct": 5.500381970970206,
+      "neighbour_only_share": 0.32162106135986734,
+      "density": 0.00046398436964137536,
+      "mean_parallel_tx_per_edge": 9.779529929373625,
+      "edges_after_window_end": 0,
+      "edges_before_window_start": 18903,
+      "edges_after_window_end_note": "last transaction timestamp of a collapsed edge compared with split end",
+      "seed_degree_median": 1.0,
+      "seed_degree_p95": 10.0,
+      "isolated_seed_share": 0.0,
+      "seeds_with_labelled_neighbour_share": 0.03453017570664629,
+      "fraud_seeds_with_fraud_neighbour_share": 0.08611111111111111
+    },
+    "test": {
+      "months": [
+        36,
+        42
+      ],
+      "n_nodes": 13675,
+      "n_edges": 78608,
+      "n_labelled": 9950,
+      "fraud_rate_pct": 2.020100502512563,
+      "neighbour_only_share": 0.2723948811700183,
+      "density": 0.00042038173301043176,
+      "mean_parallel_tx_per_edge": 8.782541217178913,
+      "edges_after_window_end": 0,
+      "edges_before_window_start": 41900,
+      "edges_after_window_end_note": "last transaction timestamp of a collapsed edge compared with split end",
+      "seed_degree_median": 1.0,
+      "seed_degree_p95": 11.0,
+      "isolated_seed_share": 0.0,
+      "seeds_with_labelled_neighbour_share": 0.0777889447236181,
+      "fraud_seeds_with_fraud_neighbour_share": 0.11940298507462686
+    }
+  },
+  "node_sharing": {
+    "train_val": 890,
+    "train_test": 1001,
+    "val_test": 1274
+  },
+  "causal_check_passed": true
+}

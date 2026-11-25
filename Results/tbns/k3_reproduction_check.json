@@ -1,0 +1,31 @@
+{
+  "train": {
+    "same_nodes": true,
+    "same_edge_count": true,
+    "nodes_rebuilt": 8685,
+    "nodes_original": 8685,
+    "edges_rebuilt": 541301,
+    "edges_original": 541301,
+    "max_rel_diff_features_31_33": 0.0
+  },
+  "val": {
+    "same_nodes": true,
+    "same_edge_count": true,
+    "nodes_rebuilt": 8983,
+    "nodes_original": 8983,
+    "edges_rebuilt": 340682,
+    "edges_original": 340682,
+    "max_rel_diff_features_31_33": 0.0
+  },
+  "test": {
+    "same_nodes": true,
+    "same_edge_count": true,
+    "nodes_rebuilt": 12935,
+    "nodes_original": 12935,
+    "edges_rebuilt": 580754,
+    "edges_original": 580754,
+    "max_rel_diff_features_31_33": 0.0
+  },
+  "passed": true,
+  "time": "2026-11-12T01:00:32"
+}
