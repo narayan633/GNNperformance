@@ -13,24 +13,24 @@ configs/
     best_params.json             tuned settings, one entry per model|dataset|split (best Optuna trial)
     search_spaces.md             tuning protocol and search spaces
 src/
-    jconfig.py                   paths, seeds, splits, models and experiment definitions
-    jutils.py                    atomic writes, seeding, logging, run folders
-    jdata.py                     graph loading and random splits
-    jmodels.py                   GCN, GAT, GCN+LSTM, GNN+Autoencoder, EvolveGCN-H, hybrids, raw baselines
-    jtrain.py                    training and evaluation of one run
-    jmetrics.py                  AUC-PRC, F1, MCC, ECE, Brier, alert budgets, expected cost
-    params.py                    settings of each run, read from configs/best_params.json
-    data_build.py                Elliptic preprocessing and conversion of the TBNS graphs
-    tbns_build_k.py              TBNS graphs with K = 1 and K = 5
-    tbns_evaluation.py           TBNS audit and structure tests 
-    inference_timing.py          latency, throughput and memory against graph size 
-    perturbation_robustness.py   edge drop and feature noise at inference 
-    encoder control without the tree-setting.py        raw XGBoost with the tree settings of the no-edge pipeline 
-    explanation_stability.py     KernelSHAP, LIME, feature mask and GNNExplainer 
-    explain_ten_seeds.py         extends the explanation experiment to ten training seeds 
-    analysis_reliability.py      reliability tables from the saved predictions 
-    analysis_statistics.py       statistical tests and the design synthesis
-    results/                         the numbers behind every table and figure
+    jconfig.py                                       paths, seeds, splits, models and experiment definitions
+    jutils.py                                        atomic writes, seeding, logging, run folders
+    jdata.py                                         graph loading and random splits
+    jmodels.py                                       GCN, GAT, GCN+LSTM, GNN+Autoencoder, EvolveGCN-H, hybrids, raw baselines
+    jtrain.py                                        training and evaluation of one run
+    jmetrics.py                                      AUC-PRC, F1, MCC, ECE, Brier, alert budgets, expected cost
+    params.py                                        settings of each run, read from configs/best_params.json
+    data_build.py                                    Elliptic preprocessing and conversion of the TBNS graphs
+    tbns_build_k.py                                  TBNS graphs with K = 1 and K = 5
+    tbns_evaluation.py                               TBNS audit and structure tests 
+    inference_timing.py                              latency, throughput and memory against graph size 
+    perturbation_robustness.py                       edge drop and feature noise at inference 
+    encoder control without the tree-setting.py      raw XGBoost with the tree settings of the no-edge pipeline 
+    explanation_stability.py                         KernelSHAP, LIME, feature mask and GNNExplainer 
+    explain_ten_seeds.py                             extends the explanation experiment to ten training seeds 
+    analysis_reliability.py                          reliability tables from the saved predictions 
+    analysis_statistics.py                           statistical tests and the design synthesis
+    results/                                         the numbers behind every table and figure
 ```
 
 ## Setup
