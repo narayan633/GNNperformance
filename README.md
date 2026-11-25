@@ -8,7 +8,7 @@ The study compares seven GNN and hybrid models (GCN, GAT, GCN+XGBoost, GCN+KNN, 
 
 ## Repository layout
 
-```
+
 configs/
     best_params.json             tuned settings, one entry per model|dataset|split (best Optuna trial)
     search_spaces.md             tuning protocol and search spaces
@@ -22,16 +22,16 @@ src/
     params.py                    settings of each run, read from configs/best_params.json
     data_build.py                Elliptic preprocessing and conversion of the TBNS graphs
     tbns_build_k.py              TBNS graphs with K = 1 and K = 5
-    tbns_evaluation.py           TBNS audit and structure tests (RQ2)
-    inference_timing.py          latency, throughput and memory against graph size (RQ3)
-    perturbation_robustness.py   edge drop and feature noise at inference (RQ4)
-    encoder control without the tree-setting.py        raw XGBoost with the tree settings of the no-edge pipeline (RQ1, RQ4)
-    explanation_stability.py     KernelSHAP, LIME, feature mask and GNNExplainer (RQ5)
-    explain_ten_seeds.py         extends the explanation experiment to ten training seeds (RQ5)
-    analysis_reliability.py      reliability tables from the saved predictions (RQ4)
+    tbns_evaluation.py           TBNS audit and structure tests 
+    inference_timing.py          latency, throughput and memory against graph size 
+    perturbation_robustness.py   edge drop and feature noise at inference 
+    encoder control without the tree-setting.py        raw XGBoost with the tree settings of the no-edge pipeline 
+    explanation_stability.py     KernelSHAP, LIME, feature mask and GNNExplainer 
+    explain_ten_seeds.py         extends the explanation experiment to ten training seeds 
+    analysis_reliability.py      reliability tables from the saved predictions 
     analysis_statistics.py       statistical tests and the design synthesis
-results/                         the numbers behind every table and figure
-```
+    results/                         the numbers behind every table and figure
+
 
 ## Setup
 
